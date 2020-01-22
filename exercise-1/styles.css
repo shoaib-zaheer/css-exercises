@@ -67,46 +67,25 @@ body {
 @media screen and (min-width: 600px) {
 
  .box {
-    margin-top: var(--grid);
-    min-height: calc(23.7* var(--grid));
+  height: 47vh;
+  width: 50px;
   }
-.grid__black{
-  width: 50px;
-}
-
-.grid__red{
-  width: 50px;
-}
-
-.text{
-  position: absolute;
-  margin: 60px;
-}
-
+  .text{
+    position: absolute;
+    margin: 60px;
+  }
 }
 
 @media screen and (min-width: 900px) {
 
-  .box {
-     min-height: 95%;
+
+   .box {
+     position: absolute;
+     height:96.5vh;
+    }
+
+  .box .box__red .grid__red{
+   float: right;
    }
 
-
-   }
- .grid__black .grid{
-  position: absolute;
-   width: 50px;
- }
- 
- .grid__red{
-   position: absolute;
-   width: 50px;
- }
- 
- .text{
-   position: absolute;
-   margin: 55px 55px 0 55px;
-
- }
- 
- }
+  }
