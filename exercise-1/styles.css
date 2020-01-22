@@ -63,3 +63,50 @@ body {
   margin-right: auto;
   max-width: 56em;
 }
+
+@media screen and (min-width: 600px) {
+
+ .box {
+    margin-top: var(--grid);
+    min-height: calc(23.7* var(--grid));
+  }
+.grid__black{
+  width: 50px;
+}
+
+.grid__red{
+  width: 50px;
+}
+
+.text{
+  position: absolute;
+  margin: 60px;
+}
+
+}
+
+@media screen and (min-width: 900px) {
+
+  .box {
+     min-height: 95%;
+   }
+
+
+   }
+ .grid__black .grid{
+  position: absolute;
+   width: 50px;
+ }
+ 
+ .grid__red{
+   position: absolute;
+   width: 50px;
+ }
+ 
+ .text{
+   position: absolute;
+   margin: 55px 55px 0 55px;
+
+ }
+ 
+ }
