@@ -5,3 +5,22 @@ body {
 * {
   box-sizing: border-box;
 }
+
+.box.container{
+  width: 900px;
+  height: 1600px;
+  background: black;
+}
+
+.box-image{
+  width: 4500px;
+  height: 1600px;
+  position: relative;
+  transition: left 3s;
+}
+
+.position-img{
+  float: left;
+  margin: 0;
+  padding: 0;
+}
