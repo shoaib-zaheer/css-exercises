@@ -5,22 +5,72 @@ body {
 * {
   box-sizing: border-box;
 }
+/* MAIN CONTAINERS */
 
-.box.container{
-  width: 900px;
-  height: 1600px;
+.container{
   background: black;
+  width: 1200px;
+  height: 600px;
+  padding: auto;
 }
 
-.box-image{
-  width: 4500px;
-  height: 1600px;
+.box-container{
+  width: 500px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* IMEGES PART */
+.image-box{
+  width: 2500px;
+  height: 600px;
   position: relative;
-  transition: left 3s;
+  transition: left 2s;
 }
 
-.position-img{
+.slider-img{
   float: left;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+  width: 500px;
+  height: auto;
+}
+
+/* BUTTONS */
+
+.button-container{
+  top: -20px;
+  position: relative;
+}
+.slider-button{
+  display: inline-block;
+  height: 20px;
+  width: 10px;
+  border-radius: 10px;
+  opacity: 0.6;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+}
+
+/* BUTTONS TO GO FOR NEXT OR PREVIEWS PICTURE IN BOX*/
+
+#slider-img-1:target ~ .image-box{
+  left: 0px;
+}
+#slider-img-2:target ~ .image-box{
+  left: -500px;
+}
+#slider-img-3:target ~ .image-box{
+  left: -1000px;
+}
+#slider-img-4:target ~ .image-box{
+  left: -1500px;
+}
+#slider-img-5:target ~ .image-box{
+  left: -2000px;
 }
