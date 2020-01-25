@@ -14,3 +14,6 @@ following:
 3.  Left/right buttons aren’t necessary
 4.  Touch swipe isn’t necessary
 5.  Supporting flexible slides / image sizes isn’t necessary.
+
+
+
