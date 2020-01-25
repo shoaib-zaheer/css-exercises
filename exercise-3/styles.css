@@ -5,22 +5,74 @@ body {
 * {
   box-sizing: border-box;
 }
-
-.box.container{
+.main-box{
   width: 900px;
-  height: 1600px;
-  background: black;
+  height: 400px;
+  background-color: darkblue;
+  margin-top: 50px;
+  
+}
+
+.box-container{
+  width: 280px; /*the original width of you picture*/
+  height: 400px;/*the original height of you picture*/
+  margin-left:auto;
+  margin-right:auto;
+  overflow:hidden; /*To keep other Images hidden and see only one in center*/
+  text-align: center; /*to aline slider buttons in center */
 }
 
 .box-image{
-  width: 4500px;
-  height: 1600px;
+  width: 1500px; /*the combine total width of all your pictures so it can be aline in one row*/
+  height: 400px;
   position: relative;
-  transition: left 3s;
+  transition: left 1s;
+
+  -webkit-transform: 1s;
+  -moz-transform: 1s;
+  -o-transform: 1s;
 }
 
+/* PICTURES */
 .position-img{
-  float: left;
-  margin: 0;
-  padding: 0;
+  float: left; /*To float all pictures in to left*/
+  margin: 0px;
+  padding: 0px;
+}
+/* BUTTONS */
+
+.box-buttons{
+  top:-20px;
+  position: relative;
+}
+
+/* BUTTONS TO CHANGE THE PICTURES*/
+
+.slider-button{
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color:white ;
+}
+/* */
+#position-img-1:target ~ .box-image{
+  left: 0px;
+
+}
+#position-img-2:target ~ .box-image{
+  left: -280px;
+  
+}
+#position-img-3:target ~ .box-image{
+  left: -480px;
+  
+}
+#position-img-4:target ~ .box-image{
+  left: -840px;
+  
+}
+#position-img-5:target ~ .box-image{
+  left: -1120px;
+  
 }
