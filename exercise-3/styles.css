@@ -1,17 +1,9 @@
-body {
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
 
 .main-box{
   width: 900px;
   height: 400px;
   background-color: darkblue;
   margin-top: 50px;
-
 }
 
 .box-container{
